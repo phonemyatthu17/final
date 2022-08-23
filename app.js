@@ -1,11 +1,11 @@
 const menu = [
   {
     id: 1,
-    title: "buttermilk pancakes",
-    category: "breakfast",
-    price: 15.99,
-    img: "https://source.unsplash.com/400x400?pancakes",
-    desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+    title: "casturd",
+    category: "bread",
+    price: 400,
+    img: "https://source.unsplash.com/400x400?bread",
+    desc: `soft and delious bread`,
   },
   {
     id: 2,
