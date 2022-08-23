@@ -34,8 +34,8 @@ const menu = [
   {
     id: 5,
     title: "match",
-    category: "place 1",
-    price: 400 - 600,
+    category: "place1",
+    price: 400,
     img: "https://source.unsplash.com/400x400?matchbox",
     desc: `franzen vegan pabst bicycle rights kickstarter pinterest meditation farm-to-table 90's pop-up `,
   },
