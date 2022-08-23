@@ -5,7 +5,6 @@ const menu = [
     category: "coffee",
     price: 250,
     img: "https://source.unsplash.com/400x400?cereal",
-    desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
   },
   {
     id: 2,
@@ -13,7 +12,6 @@ const menu = [
     category: "coffee",
     price: 250,
     img: "https://source.unsplash.com/400x300?tea",
-    desc: `vaporware iPhone mumblecore selvage raw denim slow-carb leggings gochujang helvetica man braid jianbing. Marfa thundercats `,
   },
   {
     id: 3,
@@ -21,7 +19,6 @@ const menu = [
     category: "coffee",
     price: 250,
     img: "https://source.unsplash.com/400x400?tea",
-    desc: `ombucha chillwave fanny pack 3 wolf moon street art photo booth before they sold out organic viral.`,
   },
   {
     id: 4,
@@ -29,7 +26,6 @@ const menu = [
     category: "coffee",
     price: 250,
     img: "https://source.unsplash.com/400x400?coffee",
-    desc: `Shabby chic keffiyeh neutra snackwave pork belly shoreditch. Prism austin mlkshk truffaut, `,
   },
   {
     id: 5,
@@ -37,7 +33,6 @@ const menu = [
     category: "place1",
     price: 400,
     img: "https://source.unsplash.com/400x400?matchbox",
-    desc: `franzen vegan pabst bicycle rights kickstarter pinterest meditation farm-to-table 90's pop-up `,
   },
   {
     id: 6,
@@ -45,7 +40,6 @@ const menu = [
     category: "curry",
     price: 400,
     img: "https://source.unsplash.com/400x400?onion",
-    desc: `Portland chicharrones ethical edison bulb, palo santo craft beer chia heirloom iPhone everyday`,
   },
   {
     id: 7,
@@ -53,7 +47,6 @@ const menu = [
     category: "curry",
     price: 700,
     img: "https://source.unsplash.com/400x300?onion",
-    desc: `carry jianbing normcore freegan. Viral single-origin coffee live-edge, pork belly cloud bread iceland put a bird `,
   },
   {
     id: 8,
@@ -61,7 +54,6 @@ const menu = [
     category: "curry",
     price: 300,
     img: "https://source.unsplash.com/400x400?ginger",
-    desc: `on it tumblr kickstarter thundercats migas everyday carry squid palo santo leggings. Food truck truffaut  `,
   },
   {
     id: 9,
@@ -69,7 +61,6 @@ const menu = [
     category: "curry",
     price: 200 - 230,
     img: "https://source.unsplash.com/400x400?eggs",
-    desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
   },
   {
     id: 10,
@@ -77,7 +68,6 @@ const menu = [
     category: "curry",
     price: 300,
     img: "https://source.unsplash.com/400x300?egg",
-    desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
   },
 ];
 // get parent element
