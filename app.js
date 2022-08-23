@@ -1,11 +1,11 @@
 const menu = [
   {
     id: 1,
-    title: "casturd",
-    category: "bread",
-    price: 400,
-    img: "./images/item-2.jpeg",
-    desc: `soft and delious bread`,
+    title: "buttermilk pancakes",
+    category: "breakfast",
+    price: 15.99,
+    img: "./images/item-1.jpeg",
+    desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
   },
   {
     id: 2,
@@ -131,7 +131,7 @@ function displayMenuButtons() {
 
   btnContainer.innerHTML = categoryBtns;
   const filterBtns = btnContainer.querySelectorAll(".filter-btn");
-  // console.log(filterBtns);
+  console.log(filterBtns);
 
   filterBtns.forEach(function (btn) {
     btn.addEventListener("click", function (e) {
