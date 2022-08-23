@@ -4,7 +4,7 @@ const menu = [
     title: "casturd",
     category: "bread",
     price: 400,
-    img: "https://source.unsplash.com/400x400?bread",
+    img: "./images/item-2.jpeg",
     desc: `soft and delious bread`,
   },
   {
