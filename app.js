@@ -1,10 +1,10 @@
 const menu = [
   {
     id: 1,
-    title: "buttermilk pancakes",
+    title: "super kway kar",
     category: "breakfast",
-    price: 15.99,
-    img: "./images/item-1.jpeg",
+    price: 250,
+    img: "https://source.unsplash.com/images/400x400?mountain",
     desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
   },
   {
