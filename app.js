@@ -129,7 +129,7 @@ window.addEventListener("DOMContentLoaded", function () {
   displayMenuButtons();
 });
 
-function diplayMenuItems(menuItems) {
+function diplayMenuItems(menuItems, searchWord) {
   let displayMenu = menuItems.map(function (item) {
     // console.log(item);
 
@@ -147,9 +147,11 @@ function diplayMenuItems(menuItems) {
         </article>`;
   });
   displayMenu = displayMenu.join("");
-  // console.log(displayMenu);
-
   sectionCenter.innerHTML = displayMenu;
+
+  if (menuItems.length == 0) {
+    sectionCenter.innerHTML = `<h1 class="no-match">No match found of "<span class="clr-inside">${searchWord}</span>"</h1>`;
+  }
 }
 function displayMenuButtons() {
   const categories = menu.reduce(
@@ -171,7 +173,7 @@ function displayMenuButtons() {
 
   btnContainer.innerHTML = categoryBtns;
   const filterBtns = btnContainer.querySelectorAll(".filter-btn");
-  console.log(filterBtns);
+  // console.log(filterBtns);
 
   filterBtns.forEach(function (btn) {
     btn.addEventListener("click", function (e) {
@@ -191,3 +193,25 @@ function displayMenuButtons() {
     });
   });
 }
+
+// get search bar & it's parent
+const searchContainer = document.querySelector(".search-container");
+const searchBar = document.querySelector(".search-bar");
+
+searchBar.addEventListener("keydown", function (e) {
+  let typeWord = e.target.value;
+  if (e.target.value.length == 0) return;
+
+  let checkItem;
+
+  const filterFunc = menu.filter(function (f) {
+    checkItem = f.title.toLowerCase().includes(e.target.value.toLowerCase());
+
+    if (checkItem) {
+      console.log(f.title);
+      return f;
+    }
+  });
+
+  diplayMenuItems(filterFunc, typeWord);
+});

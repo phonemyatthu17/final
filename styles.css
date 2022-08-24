@@ -172,6 +172,10 @@ Menu
 ===============
 */
 
+.clr-inside {
+  color: #49a6e9;
+}
+
 .menu {
   padding: 5rem 0;
 }
@@ -185,6 +189,27 @@ Menu
   background: var(--clr-gold);
   margin-left: auto;
   margin-right: auto;
+}
+.search-container {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.search-bar {
+  width: 20%;
+  height: 2.75em;
+  min-width: 300px;
+
+  font-size: 1rem;
+  color: var(--clr-grey-3);
+  outline: none;
+  border-radius: 100vmax;
+  padding: 0.35em 1.125em;
+  border: 1px solid #ced4da;
+}
+.search-bar:focus {
+  border-color: skyblue;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(135, 206, 235, 0.6);
 }
 .btn-container {
   margin-bottom: 4rem;
@@ -228,8 +253,9 @@ Menu
   border-radius: var(--radius);
 }
 .item-info header {
+  height: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   border-bottom: 0.5px dotted var(--clr-grey-5);
 }
 .item-info h4 {
@@ -252,11 +278,20 @@ Menu
   .photo {
     height: 175px;
   }
+  header {
+    flex-direction: column;
+    padding-left: 5%;
+  }
 }
 @media screen and (min-width: 1200px) {
   .section-center {
     width: 95vw;
     grid-template-columns: 1fr 1fr;
+  }
+  .no-match {
+    margin: 0;
+    grid-column: span 2;
+    text-align: center;
   }
   .photo {
     height: 150px;
