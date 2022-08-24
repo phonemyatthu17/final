@@ -79,6 +79,46 @@ const menu = [
     img: "https://source.unsplash.com/400x300?egg",
     desc: ``,
   },
+  {
+    id: 11,
+    title: "eye noodle",
+    category: "noodles",
+    price: 550,
+    img: "https://source.unsplash.com/400x300?noodle",
+    desc: ``,
+  },
+  {
+    id: 12,
+    title: "mama korea kitchen",
+    category: "noodles",
+    price: 350,
+    img: "https://source.unsplash.com/400x310?noodle",
+    desc: ``,
+  },
+  {
+    id: 13,
+    title: "MAMA SEA",
+    category: "noodles",
+    price: 300,
+    img: "https://source.unsplash.com/400x320?noodle",
+    desc: ``,
+  },
+  {
+    id: 14,
+    title: "Xcite",
+    category: "noodles",
+    price: 450,
+    img: "https://source.unsplash.com/400x330?noodle",
+    desc: ``,
+  },
+  {
+    id: 15,
+    title: "Ei Ei",
+    category: "noodles",
+    price: 300,
+    img: "https://source.unsplash.com/400x340?noodle",
+    desc: ``,
+  },
 ];
 // get parent element
 const sectionCenter = document.querySelector(".section-center");
