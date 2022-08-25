@@ -129,7 +129,7 @@ window.addEventListener("DOMContentLoaded", function () {
   displayMenuButtons();
 });
 
-function diplayMenuItems(menuItems, searchWord) {
+function diplayMenuItems(menuItems) {
   let displayMenu = menuItems.map(function (item) {
     // console.log(item);
 
@@ -148,6 +148,11 @@ function diplayMenuItems(menuItems, searchWord) {
   });
   displayMenu = displayMenu.join("");
   sectionCenter.innerHTML = displayMenu;
+
+  if (searchWord.length == 0) {
+    sectionCenter.innerHTML = ``;
+    return;
+  }
 
   if (menuItems.length == 0) {
     sectionCenter.innerHTML = `<h1 class="no-match">No match found of "<span class="clr-inside">${searchWord}</span>"</h1>`;
@@ -198,20 +203,21 @@ function displayMenuButtons() {
 const searchContainer = document.querySelector(".search-container");
 const searchBar = document.querySelector(".search-bar");
 
-searchBar.addEventListener("keydown", function (e) {
-  let typeWord = e.target.value;
-  if (e.target.value.length == 0) return;
+let searchWord = searchBar.value;
+
+searchBar.addEventListener("keyup", function (e) {
+  let searchWord = e.target.value;
+  if (searchWord == 0) return;
 
   let checkItem;
 
   const filterFunc = menu.filter(function (f) {
-    checkItem = f.title.toLowerCase().includes(e.target.value.toLowerCase());
+    checkItem = f.title.toLowerCase().includes(searchWord.toLowerCase());
 
     if (checkItem) {
-      console.log(f.title);
       return f;
     }
   });
 
-  diplayMenuItems(filterFunc, typeWord);
+  diplayMenuItems(filterFunc);
 });
